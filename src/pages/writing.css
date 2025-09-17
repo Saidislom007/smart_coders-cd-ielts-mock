@@ -1,0 +1,159 @@
+/* Asosiy konteynerni 2 ustunga bo‘lamiz */
+.writing-container {
+  background: linear-gradient(to right, #f0f4f8, #e2e8f0);
+  color: #111827;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  /* default */
+}
+
+.writing-container.dark {
+  background: linear-gradient(to right, #1e293b, #0f172a);
+  color: #f1f5f9;
+}
+
+.task-image {
+  padding: 20px;
+  height: 80%;
+}
+
+/* Yuqori panel */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Chap va o‘ng ustunlarni yonma-yon qilish */
+.content {
+  padding: auto;
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  min-height: 70vh;
+}
+
+/* Chap ustun (savol) */
+.prompt {
+  flex: 1;
+  background-color: #fffbea;
+  border-left: 6px solid #facc15;
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* O‘ng ustun (javob yozish joyi) */
+.answer-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark .prompt {
+  background-color: #3b3b1b;
+  border-left: 6px solid #eab308;
+  color: #fef9c3;
+}
+
+/* O‘ng ustun (yozish maydoni) */
+
+.writing-area {
+  flex: 1;
+  width: 100%;
+  padding: 1.25rem;
+  font-size: 17px;
+  line-height: 1.7;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  resize: vertical;
+  background-color: white;
+  color: #111827;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark .writing-area {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #475569;
+}
+
+/* So‘zlar soni pastida chiqishi uchun */
+.meta {
+  margin-top: 1rem;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.dark .meta {
+  color: #94a3b8;
+}
+
+/* Tugmalar */
+.btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* ===== Asosiy tugma (Complete / Next) ===== */
+.main-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+}
+
+.back-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+  transform: translateY(-2px);
+}
+
+.main-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+  transform: translateY(-2px);
+}
+
+.back-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+}
+
+.main-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+}

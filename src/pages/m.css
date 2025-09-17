@@ -1,0 +1,65 @@
+/* Asosiy konteyner */
+.reading-main {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Zoom tugmalar */
+.zoom-buttons {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+.zoom-buttons button {
+  padding: 8px 14px;
+  font-size: 18px;
+  margin-right: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.zoom-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Timer pozitsiyasi */
+.reading-timer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff3cd;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 1px solid #ffeeba;
+  font-weight: bold;
+  z-index: 9999;
+}
+
+/* Submit tugmasi */
+.nav-button {
+  padding: 12px 28px;
+  font-size: 18px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #218838;
+}
+
+.nav-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}

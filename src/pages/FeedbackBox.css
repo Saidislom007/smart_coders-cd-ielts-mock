@@ -1,0 +1,129 @@
+/* ===== Root container ===== */
+.feedback-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f3f4f6; /* light gray */
+  color: #111827;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.feedback-container.dark {
+  background: #0f172a; /* dark navy */
+  color: #f8fafc;
+}
+
+/* ===== Headings ===== */
+.feedback-container h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ===== Card ===== */
+.feedback-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: background 0.3s ease;
+}
+
+.dark .feedback-card {
+  background: #1e293b;
+}
+
+/* ===== Score Badge ===== */
+.score-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.score-green {
+  background: #22c55e;
+}
+
+.score-yellow {
+  background: #eab308;
+}
+
+.score-red {
+  background: #ef4444;
+}
+
+/* ===== Progress Bar ===== */
+.progress {
+  width: 100%;
+  height: 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 9999px;
+  overflow: hidden;
+  margin: 0.75rem 0;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #34d399, #10b981);
+  transition: width 0.4s ease;
+}
+
+/* ===== Improvements list ===== */
+.improvement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.improvement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: #f9fafb;
+  margin-bottom: 0.75rem;
+}
+
+.dark .improvement-item {
+  background: #334155;
+}
+
+/* ===== Rewritten Example ===== */
+.rewritten {
+  font-style: italic;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: #f9fafb;
+  margin-top: 0.5rem;
+}
+
+.dark .rewritten {
+  background: #334155;
+  color: #e2e8f0;
+}
+
+/* ===== Loader ===== */
+.loader {
+  width: 3rem;
+  height: 3rem;
+  border: 4px solid #3b82f6;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

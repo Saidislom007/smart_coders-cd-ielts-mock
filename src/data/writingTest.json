@@ -1,0 +1,16 @@
+[
+  {
+    "task1": [
+      { 
+        "question_text": "You should spend about 20 minutes on this task.\nThe diagram below shows how ethanol fuel is produced from corn.\nSummarise the information by selecting and reporting the main features and make comparisons where relevant.\nYou should write at least 150 words.", 
+        "image": "https://mock-ielts-api.infinite-co.uz/media/writing/task1/2_0.jpg" 
+      }
+    ],
+    "task2": [
+      { 
+        "question_text": "In many countries, primary and secondary schools close for two months or more in the summer holidays.\nWhat is the value of long school holidays?\nWhat are the arguments in favour of shorter school holidays?\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\nWrite at least 250 words.", 
+        "image": "" 
+      }
+    ]
+  }
+]

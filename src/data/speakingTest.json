@@ -1,0 +1,21 @@
+[
+  {
+    "part1_questions": [
+      {
+        "question_text": "Do you enjoy celebrating your birthday?\r\nWhat did you usually do on your birthday when you were a child?\r\nDo you think the price of a present is important?\r\nDo you like the age you are now?"
+      }
+    ],
+    "part2_cue_card": [
+      {
+        "topic": "Describe a present you gave to someone.",
+        "description": "what it was\r\nwho you gave it to\r\nwhy you gave them a present\r\nand explain why you chose this present"
+      }
+    ],
+    "part3_questions": [
+      {
+        "title": "Family and Celebrations",
+        "question_text": "Is it important to celebrate family events?\r\nWhat are the main reasons why people organise family parties in your country?\r\nAre any old traditions related to particular times of year in your country disappearing?\r\nDo you think any festivals or celebrations in your country are over-commercialised or have lost their original meaning?\r\nWhat local festival in your area do you think would be most interesting for a foreign visitor?\r\nSome people think that national celebrations are a waste of government money? Do you agree or disagree with this view?"
+      }
+    ]
+  }
+]

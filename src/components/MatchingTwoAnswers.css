@@ -1,0 +1,37 @@
+.matching-two-answers {
+  border: 1px solid #ccc;
+  padding: 14px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.matching-two-answers .instruction {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.question-block {
+  display: flex;
+  gap: 30px;
+}
+
+.question-item {
+  flex: 1;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.option-letter {
+  font-weight: bold;
+}

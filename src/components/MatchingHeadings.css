@@ -1,0 +1,22 @@
+.matching-text-box {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  background: #fafafa;
+  
+}
+
+.matching-options-box {
+  border: 1px solid #0073e6;
+  padding: 12px;
+  border-radius: 6px;
+  background: #f0f8ff;
+  margin-bottom: 20px;
+  
+}
+
+.matching-select {
+  margin: 0 4px;
+  padding: 4px;
+}

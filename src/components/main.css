@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px; /* navbar uchun tepadan joy */
+}
+
+.passage, .questions {
+    flex: 1; /* ekran bo'yicha teng bo'lishi uchun */
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box; /* padding ichki o'lchamga qo‘shiladi */
+}
+
+.questions button {
+    background-color: green;
+    border-radius: 10px;
+    width: 150px;
+    height: auto;
+    border: none;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.questions button:hover {
+    background-color: transparent;
+}

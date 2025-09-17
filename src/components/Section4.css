@@ -1,0 +1,76 @@
+.listening-section {
+
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fcfcfc;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.audio-player {
+  width: 100%;
+  margin: 16px 0;
+}
+
+.section-instruction {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #444;
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-card {
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.question-instruction {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* Section4.css */
+.question-instruction {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.question-text {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.question-number {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.note-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+}
