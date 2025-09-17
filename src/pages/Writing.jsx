@@ -8,8 +8,7 @@ import FeedbackBox from "./FeedbackBox";
 
 const TELEGRAM_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
-const OPENROUTER_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
-
+const OPENROUTER_KEY = "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";
 export default function Writing() {
   const [step, setStep] = useState(1);
   const [task1, setTask1] = useState("");
