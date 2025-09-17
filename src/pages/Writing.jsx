@@ -5,10 +5,13 @@ import ReadingTimer from "../components/ReadingTimer";
 import writingData from "../data/writingTest.json";
 import FeedbackBox from "./FeedbackBox";
 
-
+// Telegram ma'lumotlari env dan
 const TELEGRAM_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
+
+// AI kalitini bevosita kod ichida ishlatamiz (envsiz)
 const OPENROUTER_KEY = "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";
+
 export default function Writing() {
   const [step, setStep] = useState(1);
   const [task1, setTask1] = useState("");
@@ -139,25 +142,44 @@ ${task2Text}
           Authorization: `Bearer ${OPENROUTER_KEY}`,
         },
         body: JSON.stringify({
-          model: "gpt-4o-mini", // tez va arzon
+          model: "gpt-4o-mini",
           messages: [{ role: "user", content: prompt }],
           temperature: 0.0,
         }),
       });
 
+      if (!res.ok) {
+        throw new Error(`API error: ${res.status} ${res.statusText}`);
+      }
+
       const data = await res.json();
+
+      // ✅ Xavfsiz tekshiruv
+      if (!data.choices || !data.choices[0]?.message?.content) {
+        throw new Error("AI javob noto‘g‘ri formatda keldi");
+      }
+
       let raw = data.choices[0].message.content.trim();
 
+      // JSON qirqib olish
       const firstBrace = raw.indexOf("{");
       const lastBrace = raw.lastIndexOf("}");
       if (firstBrace !== -1 && lastBrace !== -1) {
         raw = raw.slice(firstBrace, lastBrace + 1);
       }
 
-      const parsed = JSON.parse(raw);
+      let parsed;
+      try {
+        parsed = JSON.parse(raw);
+      } catch (e) {
+        console.error("JSON parse xatolik:", e, "AI javobi:", raw);
+        throw new Error("JSONni parse qilib bo‘lmadi");
+      }
+
       setFeedback(parsed);
     } catch (err) {
       console.error("Feedback olishda xatolik:", err);
+      alert("Feedback olishda xatolik: " + err.message);
     } finally {
       setLoadingFeedback(false);
     }
@@ -231,7 +253,7 @@ ${task2Text}
                       if (taskNum === 1) {
                         setStep(2);
                       } else {
-                        // ✅ End of test: darhol loader chiqsin
+                        // ✅ End of test
                         setTestFinished(true);
                         setLoadingFeedback(true);
                         await getFeedback(task1, task2);
